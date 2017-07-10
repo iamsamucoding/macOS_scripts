@@ -1,0 +1,26 @@
+{
+    "folders":
+    [
+        {
+            "path": "."
+        }
+    ],
+    "settings":
+    {
+        "cc_include_options":
+        [
+            "-I/Users/samuelmartins/Dropbox/workspace/apps/ift/include",
+            "-I/Users/samuelmartins/Dropbox/workspace/apps/ift/externals/libjpeg/include",
+            "-I/Users/samuelmartins/Dropbox/workspace/apps/ift/externals/libnifti/include",
+            "-I/Users/samuelmartins/Dropbox/workspace/apps/ift/externals/libpng/include",
+            "-I/Users/samuelmartins/Dropbox/workspace/apps/ift/externals/libsvm/include",
+            "-I/home/samuel/Dropbox/workspace/apps/ift/include",
+            "-I/home/samuel/Dropbox/workspace/apps/ift/externals/libjpeg/include",
+            "-I/home/samuel/Dropbox/workspace/apps/ift/externals/libnifti/include",
+            "-I/home/samuel/Dropbox/workspace/apps/ift/externals/libpng/include",
+            "-I/home/samuel/Dropbox/workspace/apps/ift/externals/libsvm/include",
+            "-I/opt/local/include/lapack",
+            "-I/usr/local/Cellar/llvm/4.0.0_1/lib/clang/4.0.0/include/"
+        ]
+    }
+}

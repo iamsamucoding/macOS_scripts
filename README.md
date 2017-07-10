@@ -144,16 +144,8 @@
                 "-isystem", "/Library/Developer/CommandLineTools/usr/lib/clang/8.0.0/include/",
             },
             ```
-            - In the configuration file of the projects, for example, **~/Dropbox/workspace/apps/ift/ift.sublime-project**, add
-            ```
-            "settings":
-            {
-                "cc_include_options":
-                [
-                    "-I/home/sbmmartins/Dropbox/workspace/ift/include"
-                ]
-            }
-            ```
+            - In the configuration file of the projects, paste the settings available in ./sublime/ift.sublime-project
+                + I have to add a lot of include paths to avoid errors
         For Web
         - LiveReload - realoads the web page automatically after saving the source.
         - ColorHighlighter
