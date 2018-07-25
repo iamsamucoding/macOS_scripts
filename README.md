@@ -4,6 +4,14 @@
 
 
 #### Manual Installation
+- Setting up the developing environment
+    + Install xcode
+    + brew install gcc
+    + brew install g++
+    + brew install openblas
+    + brew install libomp # openmp - https://iscinumpy.gitlab.io/post/omp-on-high-sierra/ - it requires the compilation flag -Xpreprocessor -fopenmp
+
+
 - brew install rename # install rename unix command
 - Install iTerm
     + Remove dimming from inactive panes
