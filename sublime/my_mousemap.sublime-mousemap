@@ -1,0 +1,5 @@
+[
+// zoom in and out by command + mouse wheel
+{ "button": "scroll_up", "modifiers": ["command"], "command": "increase_font_size" }, 
+{ "button": "scroll_down", "modifiers": ["command"], "command": "decrease_font_size" }
+]

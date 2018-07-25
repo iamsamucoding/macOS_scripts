@@ -6,19 +6,43 @@
 #### Manual Installation
 - brew install rename # install rename unix command
 - Install iTerm
-    + Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X
-        + https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x
-        + First you need to set your left ⌥ key to act as an escape character (Esc+): Settings > Profile > Keys > Left option as +Esc
-        + Second you need to either locate the current shortcut for ⌥ ← or create a new one, in the Profile Shortcut Keys, with the following settings:
-            + Keyboard Shortcut: ⌥←
-            + Action: Send Escape Sequence
-            + Esc+: b
-        + Third, repeat for the ⌥→ keyboard shortcut with the following settings:
-            + Keyboard Shortcut: ⌥→
-            + Action: Send Escape Sequence
-            + Esc+: f
-    + Open tab and panes in the same directory
-        + https://coderwall.com/p/9xo7aq/open-up-iterm2-splits-in-current-working-directory
+    + Remove dimming from inactive panes
+        + iTerm2 > Preferences > Appearance
+        + Select: Dim inactive split panes
+
+    + Add custom colors, shortcuts, etc, in your Profile:
+        + iTerm2 > Preferences > Profile (edit or create a new profile)
+            + On General
+                + Open tab and panes in the same directory
+                    + Click on Working Directory > Advance
+                    + Click on Working Directory for New Split Panels > Reuse previous session's directory
+                    + Source: https://coderwall.com/p/9xo7aq/open-up-iterm2-splits-in-current-working-directory
+            + On Colors
+                + change the Basic Colors - Foreground to white
+            + On Text
+                + Change Font to 16pt Monaco
+            + On Keys
+                + Use ⌥ ← and ⌥→ to jump forwards / backwards words in iTerm 2, on OS X
+                    + First you need to set your left ⌥ key to act as an escape character (Esc+): Settings > Profile > Keys > Left option as +Esc
+                    + Second you need to either locate the current shortcut for ⌥ ← or create a new one, in the Profile Shortcut Keys, with the following settings:
+                        + Keyboard Shortcut: ⌥←
+                        + Action: Send Escape Sequence
+                        + Esc+: b
+                    + Third, repeat for the ⌥→ keyboard shortcut with the following settings:
+                        + Keyboard Shortcut: ⌥→
+                        + Action: Send Escape Sequence
+                        + Esc+: f
+                    + Source: https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x
+                + Pane Navigation shortcuts:
+                    + Keyboard Shortcut: ^Tab (ctrl + tab)
+                    + Action: Next Pane
+                    
+                    + Keyboard Shortcut: ^ShiftTab (ctrl + shift + tab)
+                    + Action: Previous Pane
+
+    + Custom .profile (equivalent to the .bashrc from Linux)
+        os/.profile
+
     + Change the prompt display:
         + Put the following commands into ~/.profile (there is no ~/.bashrc in newest Mac OS)
             + PS1='\u@\h:\w\$ '
@@ -73,24 +97,10 @@
         ```
 
 - Configure Sublime Text
+    - Install My Workspace (Colors, keys, snippets, ...)
+        + bash my_sublime_settings.sh
+
     - Install Package Control https://sublime.wbond.net/installation
-
-    - Install the themes in ./sublime/
-        - http://colorsublime.com/how-to-install-a-theme
-        ```
-        $ mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Colorsublime-Themes (<sublime-text-3 Packages directory>
-        $ cp ./sublime/*.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Colorsublime-Themes
-        ```
-        - The theme that I've been using is the *1337.tmTheme*
-            + Preferences > Color Scheme > Colorsublime-Themes
-
-    - Copy the content of ./sublime/my_settings.sublime-settings into Preferences > Settings - User
-
-    - Copy the content of ./sublime/my_keys.sublime-keymap into Preferences > Key Bindings - User
-
-    - Copy the Snippets:
-    `cp ./sublime/snippets/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/`
-
     - Then, to install a package: On Sublime, press ctrl+shift+p, install Package and select the package
     
     - Some packages to install:
@@ -98,9 +108,7 @@
         - Alignment: ctrl+alt+a to align
         - BracketHighlighter
         - AStyleFormatter - ctrl+alt+f para alinhar todo o arquivo, ctrl+k+f para alinhar um trecho selecionado
-        - ColorPicker: ctrl+shift+p, color... escolha a cor
         - Cython
-        - Javatar
         - LateXTool
             + It's required to install: latexmk
             + After Installing, Reconfigure LatexTools
@@ -114,9 +122,6 @@
         - Git
         - Valgrind
         - Trimmer: helps you remove unnecessary spaces, as well as trailing spaces
-        - DocBlockr: lets you create documentation or annotation for your codes with ease, by parsing the functions, parameters, variables, and automatically adding some possible documentation
-        - DoxyDoc: Doxygen on Sublime
-        - MarkDownEditing: edit .md
         - Markdown Preview
         - FileDiffs:  allows you to see the differences between two files in SublimeText
         - C++11
