@@ -40,6 +40,9 @@
                     + Keyboard Shortcut: ^ShiftTab (ctrl + shift + tab)
                     + Action: Previous Pane
 
+    + To avoid pressing tab twice for autocomplete, we put the line below into the ~/.inputrc
+        set show-all-if-ambiguous on
+
     + Custom .profile (equivalent to the .bashrc from Linux)
         os/.profile
 
