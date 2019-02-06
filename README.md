@@ -185,6 +185,9 @@
         - LiveStyle - Live bi-directional CSS edit of new generation
                     - if you edit the css by the browser, it is edit in the source file
         - HTML5 - snippets and bundlers for HTML5
+        - MarkdownEditing
+        - MarkdownPreview
+        - MarkdownLivePreview
 
 
 
