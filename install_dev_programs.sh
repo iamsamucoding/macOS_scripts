@@ -11,6 +11,7 @@ brew install htop-osx
 
 brew cask install clion
 brew cask install pycharm
+brew cask install webstorm
 brew cask install eclipse-cpp
 
 # python and pip
