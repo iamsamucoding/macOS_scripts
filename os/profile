@@ -1,0 +1,10 @@
+# adding the branch name in the terminal 
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+PS1="\[\033[0;94m\]\u\[\033[0;33m\]@\h\[\033[32m\]:\w\[\033[91m\]\$(parse_git_branch)\[\033[00m\]$ "
+
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
