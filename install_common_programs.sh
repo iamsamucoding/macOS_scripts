@@ -5,3 +5,4 @@ brew cask install skype
 brew cask install mendeley
 brew cask install calibre
 brew cask install spotify
+brew cask install slack
