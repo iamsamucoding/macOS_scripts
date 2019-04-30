@@ -1,6 +1,7 @@
 brew install gcc
 brew install g++
 brew install openblas
+brew install swig
 brew install libomp # openmp - https://iscinumpy.gitlab.io/post/omp-on-high-sierra
 # it requires the compilation flag -Xpreprocessor -fopenmp for the source and -Xpreprocessor -fopenmp -lomp to compile the programs.
 
