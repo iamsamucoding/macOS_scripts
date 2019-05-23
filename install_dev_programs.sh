@@ -28,5 +28,6 @@ printf "source ~/yeah/bin/activate\n" >> ~/.profile
 source ~/yeah/bin/activate
 
 # remove the alert/beep sound when type ctrl+command+down on CLion, etc
+# copied from https://github.com/atom/atom/issues/1669#issuecomment-135503562
 mkdir -p ~/Library/KeyBindings
 cp ./os/DefaultKeyBinding.dict ~/Library/KeyBindings
