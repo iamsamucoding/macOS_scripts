@@ -26,3 +26,7 @@ sudo pip3.7 install virtualenv
 virtualenv -p python3.7 ~/yeah
 printf "source ~/yeah/bin/activate\n" >> ~/.profile
 source ~/yeah/bin/activate
+
+# remove the alert/beep sound when type ctrl+command+down on CLion, etc
+mkdir -p ~/Library/KeyBindings
+cp ./os/DefaultKeyBinding.dict ~/Library/KeyBindings
