@@ -150,10 +150,10 @@ module.exports = {
     // Example
     // 'window:devtools': 'cmd+alt+o',
     "tab:next": [
-      "ctrl+e"
+      "ctrl+shift+right"
     ],  
     "tab:prev": [
-      "ctrl+q"
+      "ctrl+shift+left"
     ],
     "pane:next": [
       "command+]",
