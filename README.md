@@ -92,6 +92,11 @@ bash install_python_packages.sh
     #Replace any leading 0; with 4; to underline
     ```
 
+- Configure VC Code
+    + Install the plugin: Settings Sync
+    + Log into github through the plugin and download all my custom settings from there
+
+
 - Configure Sublime Text
     - Install My Workspace (Colors, keys, snippets, ...)
         + bash my_sublime_settings.sh
