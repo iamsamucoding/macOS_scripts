@@ -1,0 +1,50 @@
+{
+	// Place your ift workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Default IFT": {
+		"scope": "c",
+		"prefix": "defaultift",
+		"body": [
+			"#include \"ift.h\"\n\n",
+			"/************************** HEADERS **************************/",
+			"iftDict *iftGetArgs(int argc, const char *argv[]);",
+			"/*************************************************************/\n\n\n\n\n",
+			"int main(int argc, const char *argv[]) {",
+			"\tiftDict *args = iftGetArgs(argc, argv);\n",
+			"\ttimer *t1 = iftTic();\n\n",
+			"\tputs(\"\\nDone...\");",
+			"\tputs(iftFormattedTime(iftCompTime(t1, iftToc())));\n",
+			"\t// DESTROYERS",
+			"\tiftDestroyDict(&args);\n",
+			"\treturn 0;",
+			"}\n\n",
+			"/************************** SOURCES **************************/",
+			"iftDict *iftGetArgs(int argc, const char *argv[]) {",
+			"\tchar program_description[2048] = \\",
+			"\t\t\"- Your program description.\\n\";\n",
+			"\tiftCmdLineOpt cmd_line_opts[] = {",
+			"\t\t{.short_name = \"-a\", .long_name = \"--required-with-args\", .has_arg=true, .arg_type=IFT_STR_TYPE,",
+			"\t\t .required=true, .help=\"Example of Required parameter with arguments.\"},",
+			"\t\t{.short_name = \"-b\", .long_name = \"--required-without-args\", .has_arg=false,",
+			"\t\t .required=true, .help=\"Example of Required parameter with arguments.\"},",
+			"\t\t{.short_name = \"-c\", .long_name = \"--optional-with-args\", .has_arg=true, .arg_type=IFT_STR_TYPE,",
+			"\t\t .required=false, .help=\"Example of Optional parameter with arguments.\"},",
+			"\t\t{.short_name = \"-d\", .long_name = \"--optional-without-args\", .has_arg=false,",
+			"\t\t .required=true, .help=\"Example of Optional parameter with arguments.\"},",
+			"\t};\n",
+			"\tint n_opts = sizeof(cmd_line_opts) / sizeof (iftCmdLineOpt);\n",
+			"\t// Parser Setup",
+			"\tiftCmdLineParser *parser = iftCreateCmdLineParser(program_description, n_opts, cmd_line_opts);",
+			"\tiftDict *args            = iftParseCmdLine(argc, argv, parser); // getting the passed options/arguments",
+			"\tiftDestroyCmdLineParser(&parser);\n",
+			"\treturn args;",
+			"}"
+		],
+		"description": "Default IFT program style"
+	}
+}
