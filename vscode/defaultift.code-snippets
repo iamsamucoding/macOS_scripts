@@ -43,7 +43,7 @@
 			"\tiftDict *args            = iftParseCmdLine(argc, argv, parser); // getting the passed options/arguments",
 			"\tiftDestroyCmdLineParser(&parser);\n",
 			"\treturn args;",
-			"}"
+			"}\n"
 		],
 		"description": "Default IFT program style"
 	}
