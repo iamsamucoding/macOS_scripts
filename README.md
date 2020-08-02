@@ -37,6 +37,9 @@ source ~/yeah/bin/activate
 bash install_python_packages.sh
 
 
+- Using Android phone as webcam
+    - Install Irius webcam: https://iriun.com/
+
 #### Extra tips, information, etc...
 
 + Change the prompt display:
