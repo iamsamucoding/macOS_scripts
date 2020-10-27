@@ -39,6 +39,17 @@ bash install_python_packages.sh
 
 - Using Android phone as webcam
     - Install Irius webcam: https://iriun.com/
+    - Be sure the Samsung Smart Things is not installed on Mac
+    - On Android
+        + Install the app on Android
+        + Enable the Android Developer options
+        + Enable USB debugging
+        + Remove all USB permissions
+        + Plug the usb cable on Mac and Android
+        + Give USB grant for it (a pop up will appear)
+        + Change the USB mode to "Transfer images"
+
+
 
 #### Extra tips, information, etc...
 
